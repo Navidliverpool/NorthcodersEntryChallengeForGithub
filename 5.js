@@ -58,11 +58,13 @@ function addSoundToPets4(pets) {
 // I have written this solution about 3 months after the exam. I think it works. 
 // I tried one test and It passed it.  
 function addSoundToPets5(pets) {
-
+    if (pets.length == 0) {
+        return pets;
+    }
     if (pets[0].type == 'cat') {
-        pets[0].sound = 'meow';
+        pets[0].sound = 'meow!';
     } else {
-        pets[0].sound = 'bark';
+        pets[0].sound = 'woof!';
     }
     return pets;
 
