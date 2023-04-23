@@ -36,6 +36,19 @@ function makeAlternatingArray2(array) {
     return r;
 }
 
+// I have written this solution about 3 months after the exam. I think it works. 
+// I tried one test and It passed it.  
+// Part 2 of writing this pseudocode.
+function makeAlternatingArray3(array) {
+    let r = [];
+    if (array.length > 0) {
+        for (let i = 0; i < array.length; i += 2) {
+            r.push(array[i]);
+        }
+    }
+    return r;
+}
+
 /*
     5 Passing
 0 Failing
