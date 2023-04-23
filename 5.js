@@ -55,21 +55,6 @@ function addSoundToPets4(pets) {
     return pets;
 }
 
-// I have written this solution about 3 months after the exam. I think it works. 
-// I tried one test and It passed it.  
-function addSoundToPets5(pets) {
-    if (pets.length == 0) {
-        return pets;
-    }
-    if (pets[0].type == 'cat') {
-        pets[0].sound = 'meow!';
-    } else {
-        pets[0].sound = 'woof!';
-    }
-    return pets;
-
-}
-
 // These methods below do not pass the tests.
 // This is what I have written on the exam day. Not working at all.
 function addSoundToPets(pets) {
@@ -146,7 +131,21 @@ function addSoundToPets3(pets) {
     return pets;
 }
 
-
+// I have written this solution about 3 months after the exam. I think it works. 
+// I tried one test and It passed it.  
+// Part 2 of writing this pseudocode.
+function addSoundToPets6(pets) {
+    for (let i = 0; i < pets.length; i++) {
+        if (!pets[i].sound) {
+            if (pets[i].type == 'cat') {
+                pets[i].sound = 'meow!';
+            } else {
+                pets[i].sound = 'woof!';
+            }
+        }
+    }
+    return pets;
+}
 
 /*
 0 Passing
