@@ -10,7 +10,7 @@ Note: you may assume a double bed sleeps 2 people and a single bed sleeps 1.
 
 Examples:
 
-checkForEnoughBeds({ doubles: 3, singles: 1 }, 7)
+checkForEnoughBeds({ c }, 7)
 // should return true
 checkForEnoughBeds({ doubles: 2, singles: 5 }, 10)
 // should return false
@@ -42,7 +42,17 @@ function checkForEnoughBeds2(beds, numOfPeople) {
     return false;
 }
 
-
+// I have written this solution about 3 months after the exam. I think it works. 
+// I tried one test and It passed it.  
+// Part 2 of writing this pseudocode.
+function checkForEnoughBeds3(beds, numOfPeople) {
+    if (beds.doubles * 2 + beds.singles == numOfPeople) {
+        // This line displys all keys of beds.
+        console.log(Object.keys(beds))
+        return true;
+    }
+    return false;
+}
 
 /*
 3 Passing
