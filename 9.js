@@ -58,7 +58,6 @@ function findOldestPerson2(people) {
 function findOldestPerson3(people) {
     let r = people[0].age;
     for (let i = 0; i < people.length; i++) {
-        // r = people[i].age;
         if (people[i].age > r) {
             r = people[i].age;
         }
