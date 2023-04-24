@@ -49,5 +49,14 @@ function roundUpToNearestMultiple2(n, x) {
         rr += x;
     }
     return rr;
+}
 
+// I have written this solution about 3 months after the exam. I think it works. 
+// I tried one test and It passed it.  
+// Part 3 of writing this pseudocode.
+function roundUpToNearestMultiple3(n, x) {
+    while (n % x > 0) {
+        n++;
+    }
+    return n;
 }
