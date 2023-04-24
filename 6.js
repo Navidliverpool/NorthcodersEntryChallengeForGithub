@@ -28,7 +28,7 @@ function countTheCapitals2(string) {
 }
 
 // I have written this solution about 3 months after the exam. I think it works. 
-// I tried one test and It passed it.  
+// Later I found out that countTheCapitals3() is not working properly.  
 function countTheCapitals3(str) {
     let c = 0;
     for (let i = 0; i < str.length; i++) {
@@ -37,4 +37,32 @@ function countTheCapitals3(str) {
         }
     }
     return c;
+}
+
+// I have written this solution about 3 months after the exam. I think it works. 
+// I tried one test and It passed it.  
+// Part 2 of writing this pseudocode.
+function countTheCapitals4(string) {
+    let a = 0;
+    var result = string.split(' ').join('');
+    for (let i = 0; i < result.length; i++) {
+        if (result.charAt(i) == result.charAt(i).toUpperCase()) {
+            a++;
+        }
+    }
+    return a;
+}
+
+// I have written this solution about 3 months after the exam. I think it works. 
+// I tried one test and It passed it.  
+// Part 3 of writing this pseudocode.
+function countTheCapitals5(s) {
+    let a = 0;
+    var r = ' ';
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] == s[i].toUpperCase() && s[i] != r) {
+            a++;
+        }
+    }
+    return a;
 }
