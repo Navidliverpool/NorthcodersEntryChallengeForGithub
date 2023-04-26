@@ -10,7 +10,7 @@ Note: you may assume a double bed sleeps 2 people and a single bed sleeps 1.
 
 Examples:
 
-checkForEnoughBeds({ c }, 7)
+checkForEnoughBeds({ doubles: 3, singles: 1 }, 7)
 // should return true
 checkForEnoughBeds({ doubles: 2, singles: 5 }, 10)
 // should return false
