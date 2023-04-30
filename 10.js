@@ -1,6 +1,7 @@
 /*
 Count The Shouts
-You have been tasked with writing a function that will count up all of the words in a list that are 'shouted'. Any words that have an exclamation mark at the end are considered to be shouted.
+You have been tasked with writing a function that will count up all of the words in a list that are 'shouted'. 
+Any words that have an exclamation mark at the end are considered to be shouted.
 
 The function will take an array of words represented as strings. The function should return the count of how many words in the array are shouted.
 

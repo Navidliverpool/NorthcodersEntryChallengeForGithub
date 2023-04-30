@@ -1,7 +1,9 @@
 /*
 
 Make Single Array
-This function will be called with an array of sub-arrays. The sub-arrays will contain a mix of strings and numbers. The function should return a single array containing only the numbers in the same order, without any sub-arrays.
+This function will be called with an array of sub-arrays. 
+The sub-arrays will contain a mix of strings and numbers. 
+The function should return a single array containing only the numbers in the same order, without any sub-arrays.
 
 If passed an empty array the function should return an empty array.
 

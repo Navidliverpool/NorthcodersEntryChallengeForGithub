@@ -6,7 +6,7 @@ function makeSingleArray(arr) {
     let r = [];
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length; j++) {
-            if (typeof(arr[i][j]) != 'number') {
+            if (typeof arr[i][j] !== 'number') {
                 r.push(arr[i][j])
             }
         }

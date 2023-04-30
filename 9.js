@@ -1,6 +1,8 @@
 /*
 Who Is The Oldest
-This function will receive an array of objects. Each object will represent a person with a name and an age property. The function should return the name of the person who is oldest.
+This function will receive an array of objects. 
+Each object will represent a person with a name and an age property. 
+The function should return the name of the person who is oldest.
 
 If the array is empty, the function should return "no people found".
 
